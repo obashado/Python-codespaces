@@ -1,3 +1,4 @@
+
 import pygame
 from pygame import display, font, event
 from pygame.locals import *
@@ -6,7 +7,7 @@ from pygame.locals import *
 pygame.init()
 screen = display.set_mode()
 display.set_caption("Capstone 2")
-myFont = font.SysFont('arial', 12)  # Choose a font to use in game
+myFont = font.SysFont('arial', 15)  # Choose a font to use in game
 
 # Directions displayed throughout game
 directions = "Please press the 'Y' key for yes and the 'N' key for no."
@@ -36,16 +37,16 @@ def intro():
     intro3 = "One day, late at night, she hears a loud noise outside the village."
     q1 = "Should she go outside to investigate? Yes or no?"
 
-    screen.fill("white")
-    textSurface = myFont.render(intro1, True, "black")
+    screen.fill("Dark Blue")
+    textSurface = myFont.render(intro1, True, "White")
     screen.blit(textSurface, (10, 10))
-    textSurface = myFont.render(intro2, True, "black")
+    textSurface = myFont.render(intro2, True, "White")
     screen.blit(textSurface, (10, 24))
-    textSurface = myFont.render(intro3, True, "black")
+    textSurface = myFont.render(intro3, True, "White")
     screen.blit(textSurface, (10, 38))
-    textSurface = myFont.render(q1, True, "black")
+    textSurface = myFont.render(q1, True, "White")
     screen.blit(textSurface, (10, 52))
-    textSurface = myFont.render(directions, True, "black")
+    textSurface = myFont.render(directions, True, "White")
     screen.blit(textSurface, (10, 66))
 
 
@@ -55,14 +56,15 @@ def question1(answer):
         yes1 = "She ventures into the dark, prepared for danger."
         yes2 = "Eventually, she sees an army of ogres coming toward her village!"
         q2 = "Should she fight the ogres? Yes or no?"
-
-        textSurface = myFont.render(yes1, True, "black")
+        
+        screen.fill("Dark Blue")
+        textSurface = myFont.render(yes1, True, "white")
         screen.blit(textSurface, (10, 10))
-        textSurface = myFont.render(yes2, True, "black")
+        textSurface = myFont.render(yes2, True, "white")
         screen.blit(textSurface, (10, 24))
-        textSurface = myFont.render(q2, True, "black")
+        textSurface = myFont.render(q2, True, "white")
         screen.blit(textSurface, (10, 38))
-        textSurface = myFont.render(directions, True, "black")
+        textSurface = myFont.render(directions, True, "white")
         screen.blit(textSurface, (10, 52))
 
     elif answer == K_n:
@@ -71,18 +73,19 @@ def question1(answer):
         no3 = "She can tell something is very wrong..."
         no4 = "Eventually, she sees an army of ogres coming toward her village!"
         q2 = "Should she fight the ogres? Yes or no?"
-
-        textSurface = myFont.render(no1, True, "black")
+        
+        screen.fill("Black")nnn
+        textSurface = myFont.render(no1, True, "white")
         screen.blit(textSurface, (10, 10))
-        textSurface = myFont.render(no2, True, "black")
+        textSurface = myFont.render(no2, True, "white")
         screen.blit(textSurface, (10, 24))
-        textSurface = myFont.render(no3, True, "black")
+        textSurface = myFont.render(no3, True, "white")
         screen.blit(textSurface, (10, 38))
-        textSurface = myFont.render(no4, True, "black")
+        textSurface = myFont.render(no4, True, "white")
         screen.blit(textSurface, (10, 52))
-        textSurface = myFont.render(q2, True, "black")
+        textSurface = myFont.render(q2, True, "white")
         screen.blit(textSurface, (10, 66))
-        textSurface = myFont.render(directions, True, "black")
+        textSurface = myFont.render(directions, True, "white")
         screen.blit(textSurface, (10, 80))
 
 
@@ -102,12 +105,13 @@ def question2(answer):
     story3 = "Anya decides to talk with a village elder about what she should do."
     story4 = "The elder says there is a powerful sword hidden in the Ancient Forest."
     q3 = "Should Anya risk her life to retrieve it? Yes or no?"
-
-    textSurface = myFont.render(story2, True, "black")
+    
+    screen.fill("purple")
+    textSurface = myFont.render(story2, True, "white")
     screen.blit(textSurface, (10, 24))
-    textSurface = myFont.render(story3, True, "black")
+    textSurface = myFont.render(story3, True, "white")
     screen.blit(textSurface, (10, 38))
-    textSurface = myFont.render(story4, True, "black")
+    textSurface = myFont.render(story4, True, "")
     screen.blit(textSurface, (10, 52))
     textSurface = myFont.render(q3, True, "black")
     screen.blit(textSurface, (10, 66))
