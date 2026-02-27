@@ -72,6 +72,7 @@ def question1(answer):
         no4 = "Eventually, she sees an army of ogres coming toward her village!"
         q2 = "Should she fight the ogres? Yes or no?"
 
+        screen.fill("navy blue")
         textSurface = myFont.render(no1, True, "black")
         screen.blit(textSurface, (10, 10))
         textSurface = myFont.render(no2, True, "black")
@@ -103,6 +104,7 @@ def question2(answer):
     story4 = "The elder says there is a powerful sword hidden in the Ancient Forest."
     q3 = "Should Anya risk her life to retrieve it? Yes or no?"
 
+    screen.fill("green")
     textSurface = myFont.render(story2, True, "black")
     screen.blit(textSurface, (10, 24))
     textSurface = myFont.render(story3, True, "black")
@@ -123,7 +125,7 @@ def question3(answer):
         yes3 = "In the dead of winter, the ogres come back."
         yes4 = "This time they are being led by their evil king."
         q4 = "Should Anya fight the ogre king now that she has the Sword of Legends?"
-
+        screen.fill("purple")
         textSurface = myFont.render(yes1, True, "black")
         screen.blit(textSurface, (10, 10))
         textSurface = myFont.render(yes2, True, "black")
@@ -143,7 +145,7 @@ def question3(answer):
         no3 = "In the dead of winter, the ogres come back."
         no4 = "This time they are being led by their evil king."
         q4 = "Should Anya fight the king even though she doesn't have the Sword of Legends?"
-
+        screen.fill("purple:")
         textSurface = myFont.render(no1, True, "black")
         screen.blit(textSurface, (10, 10))
         textSurface = myFont.render(no2, True, "black")
@@ -168,7 +170,7 @@ def end(answer):
         end4 = "This act of kindness warms the evil king's heart,"
         end5 = "who promises to leave the village alone for eternity."
         end6 = "The end!"
-
+        screen.fill("light blue")
         textSurface = myFont.render(yes1, True, "black")
         screen.blit(textSurface, (10, 10))
         textSurface = myFont.render(end1, True, "black")
@@ -191,6 +193,7 @@ def end(answer):
         end3 = "She is just thankful that the villagers were able to get to safety."
         end4 = "The end!"
 
+        screen.fill("red")
         textSurface = myFont.render(no1, True, "black")
         screen.blit(textSurface, (10, 10))
         textSurface = myFont.render(end1, True, "black")
