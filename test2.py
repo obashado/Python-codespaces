@@ -36,7 +36,7 @@ def intro():
     intro3 = "One day, late at night, she hears a loud noise outside the village."
     q1 = "Should she go outside to investigate? Yes or no?"
 
-    screen.fill("white")
+    screen.fill("blue")
     textSurface = myFont.render(intro1, True, "black")
     screen.blit(textSurface, (10, 10))
     textSurface = myFont.render(intro2, True, "black")
@@ -55,7 +55,7 @@ def question1(answer):
         yes1 = "She ventures into the dark, prepared for danger."
         yes2 = "Eventually, she sees an army of ogres coming toward her village!"
         q2 = "Should she fight the ogres? Yes or no?"
-
+        screen.fill("dark blue")
         textSurface = myFont.render(yes1, True, "black")
         screen.blit(textSurface, (10, 10))
         textSurface = myFont.render(yes2, True, "black")
